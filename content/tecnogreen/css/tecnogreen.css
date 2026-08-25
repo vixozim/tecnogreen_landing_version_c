@@ -1008,46 +1008,46 @@ body:not(.template-slider) #Header_wrapper {
 	background-image: url("../images/home_tecnogreen_subheader.jpg");
 }
 body, button, span.date_label, .timeline_items li h3 span, input[type="submit"], input[type="reset"], input[type="button"], input[type="text"], input[type="password"], input[type="tel"], input[type="email"], textarea, select, .offer_li .title h3 {
-	font-family: "Lato", Arial, Tahoma, sans-serif;
+	font-family: "Lato", sans-serif;
 	font-weight: 400;
 }
 #menu>ul>li>a, .action_button, #overlay-menu ul li a {
-	font-family: "Lato", Arial, Tahoma, sans-serif;
+	font-family: "Lato", sans-serif;
 	font-weight: 400;
 }
 #Subheader .title {
-	font-family: "Lato", Arial, Tahoma, sans-serif;
+	font-family: "Lato", sans-serif;
 	font-weight: 400;
 }
 h1, .text-logo #logo {
-	font-family: "Lato", Arial, Tahoma, sans-serif;
+	font-family: "Lato", sans-serif;
 	font-weight: 300;
 }
 h2 {
-	font-family: "Lato", Arial, Tahoma, sans-serif;
+	font-family: "Lato", sans-serif;
 	font-weight: 300;
 }
 h3 {
-	font-family: "Lato", Arial, Tahoma, sans-serif;
+	font-family: "Lato", sans-serif;
 	font-weight: 300;
 }
 h4 {
-	font-family: "Lato", Arial, Tahoma, sans-serif;
+	font-family: "Lato", sans-serif;
 	font-weight: 300;
 }
 h5 {
-	font-family: "Lato", Arial, Tahoma, sans-serif;
+	font-family: "Lato", sans-serif;
 	font-weight: 700;
 }
 h6 {
-	font-family: "Lato", Arial, Tahoma, sans-serif;
+	font-family: "Lato", sans-serif;
 	font-weight: 400;
 }
 blockquote {
-	font-family: "Lato", Arial, Tahoma, sans-serif;
+	font-family: "Lato", sans-serif;
 }
 .chart_box .chart .num, .counter .desc_wrapper .number-wrapper, .how_it_works .image .number, .pricing-box .plan-header .price, .quick_fact .number-wrapper, .woocommerce .product div.entry-summary .price {
-	font-family: "Lato", Arial, Tahoma, sans-serif;
+	font-family: "Lato", sans-serif;
 }
 body {
 	font-size: 14px;
@@ -1422,7 +1422,7 @@ h6 {
 	line-height: 22px;
 	font-weight: 700;
 	font-style: normal;
-	font-family: Lato;
+	font-family: "Lato", sans-serif;
 	padding: 0px 0px 0px 0px;
 	text-decoration: none;
 	text-align: left;
@@ -1439,7 +1439,7 @@ h6 {
 	line-height: 50px;
 	font-weight: 900;
 	font-style: normal;
-	font-family: Arial;
+	font-family: "Lato", sans-serif;
 	padding: 0px 0px 0px 0px;
 	text-decoration: none;
 	text-align: left;
@@ -1456,7 +1456,7 @@ h6 {
 	line-height: 28px;
 	font-weight: 400;
 	font-style: normal;
-	font-family: Lato;
+	font-family: "Lato", sans-serif;
 	padding: 0px 0px 0px 0px;
 	text-decoration: none;
 	text-align: left;
