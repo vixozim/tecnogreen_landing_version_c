@@ -22,9 +22,9 @@
     <link rel="shortcut icon" href="content/tecnogreen/images/favicon-tecnogreen.png">
 
     <!-- FONTS -->
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,400italic,700'>
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Patua+One:100,300,400,400italic,700'>
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400&family=Patua+One&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap'>
 
     <!-- CSS -->
     <link rel='stylesheet' href='css/global.css'>
@@ -611,125 +611,6 @@
     <script src="plugins/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
     <script src="plugins/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
     <script src="plugins/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
-
-    <script src="http://maps.google.com/maps/api/js?sensor=false&ver=5.9"></script>
-
-    <script>
-        function google_maps_571a0846d6019() {
-            var latlng = new google.maps.LatLng(-33.8710, 151.2039);
-            var draggable = true;
-            var myOptions = {
-                zoom: 13,
-                center: latlng,
-                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                styles: [{
-                   "featureType":"landscape.man_made",
-                   "elementType":"geometry",
-                   "stylers": [{
-                       "color":"#f7f1df"
-                    }]
-                }, {
-                   "featureType":"landscape.natural",
-                   "elementType":"geometry",
-                   "stylers": [{
-                       "color":"#d0e3b4"
-                    }]
-                }, {
-                   "featureType":"landscape.natural.terrain",
-                   "elementType":"geometry",
-                   "stylers": [{
-                       "visibility":"off"
-                    }]
-                }, {
-                   "featureType":"poi",
-                   "elementType":"labels",
-                   "stylers": [{
-                       "visibility":"off"
-                    }]
-                }, {
-                   "featureType":"poi.business",
-                   "elementType":"all",
-                   "stylers": [{
-                       "visibility":"off"
-                    }]
-                }, {
-                   "featureType":"poi.medical",
-                   "elementType":"geometry",
-                   "stylers": [{
-                       "color":"#fbd3da"
-                    }]
-                }, {
-                   "featureType":"poi.park",
-                   "elementType":"geometry",
-                   "stylers": [{
-                       "color":"#bde6ab"
-                    }]
-                }, {
-                   "featureType":"road",
-                   "elementType":"geometry.stroke",
-                   "stylers": [{
-                       "visibility":"off"
-                    }]
-                }, {
-                   "featureType":"road",
-                   "elementType":"labels",
-                   "stylers": [{
-                       "visibility":"off"
-                    }]
-                }, {
-                   "featureType":"road.highway",
-                   "elementType":"geometry.fill",
-                   "stylers": [{
-                       "color":"#ffe15f"
-                    }]
-                }, {
-                   "featureType":"road.highway",
-                   "elementType":"geometry.stroke",
-                   "stylers": [{
-                       "color":"#efd151"
-                    }]
-                }, {
-                   "featureType":"road.arterial",
-                   "elementType":"geometry.fill",
-                   "stylers": [{
-                       "color":"#fff"
-                    }]
-                }, {
-                   "featureType":"road.local",
-                   "elementType":"geometry.fill",
-                   "stylers": [{
-                       "color":"black"
-                    }]
-                }, {
-                   "featureType":"transit.station.airport",
-                   "elementType":"geometry.fill",
-                   "stylers": [{
-                       "color":"#cfb2db"
-                    }]
-                }, {
-                   "featureType":"water",
-                   "elementType":"geometry",
-                   "stylers": [{
-                       "color":"#a2daf2"
-                    }]
-                }],
-                draggable: draggable,
-                zoomControl: true,
-                mapTypeControl: false,
-                streetViewControl: false,
-                scrollwheel: false
-            };
-            var map = new google.maps.Map(document.getElementById("google-map-area-571a0846d6019"), myOptions);
-            var marker = new google.maps.Marker({
-                position: latlng,
-                icon:"content/tecnogreen/images/home_tecnogreen_pin.png",
-                map: map
-            });
-        }
-        jQuery(document).ready(function($) {
-            google_maps_571a0846d6019();
-        });
-    </script>
 
     <script>
         var tpj = jQuery;
