@@ -133,12 +133,13 @@
 /* Mobile: logo más chico, alineado arriba a la izquierda (no centrado) */
 @media only screen and (max-width: 767px) {
 	#Top_bar .logo {
-		width: auto;
-		text-align: left;
-		margin: 0;
+		width: auto !important;
+		text-align: left !important;
+		margin: 0 !important;
+		float: none !important;
 	}
 	#Top_bar .logo #logo {
-		padding: 12px 0 12px 20px;
+		padding: 12px 0 12px 20px !important;
 		height: auto;
 		line-height: normal;
 	}
@@ -158,12 +159,15 @@
 	}
 	#slide-1-layer-6 {
 		font-size: 35px !important;
-		line-height: 31px !important;
-		margin-top: 46px !important;
+		line-height: 40px !important;
+		margin-top: 65px !important;
 	}
 	#slide-1-layer-8 {
 		font-size: 10px !important;
-		margin-top: 30px !important;
+		margin-top: 50px !important;
+	}
+	#slide-1-layer-1 {
+		left: 30px !important;
 	}
 	#slide-1-layer-1 img,
 	#slide-1-layer-3 img {
