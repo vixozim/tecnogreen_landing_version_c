@@ -132,6 +132,12 @@
 
 /* Mobile: logo más chico, alineado arriba a la izquierda (no centrado) */
 @media only screen and (max-width: 767px) {
+	/* El tema trae un .container { width:260px !important } heredado de un layout
+	   "boxed" viejo; eso deja la barra superior encogida y centrada en la pantalla
+	   aunque el logo esté alineado a la izquierda dentro de su propia caja. */
+	#Top_bar .container {
+		width: 100% !important;
+	}
 	#Top_bar .logo {
 		width: auto !important;
 		text-align: left !important;
