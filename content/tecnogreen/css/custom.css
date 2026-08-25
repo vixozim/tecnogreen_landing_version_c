@@ -446,3 +446,92 @@
 	border-left: 2px solid #eee;
 	padding-left: 12px;
 }
+
+/* Sección contacto: grid de 2 columnas (texto+bullets+whatsapp / formulario) */
+.tgn-contact-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: start;
+	gap: 40px;
+}
+@media only screen and (min-width: 992px) {
+	.tgn-contact-grid {
+		grid-template-columns: 45% 55%;
+		gap: 60px;
+		align-items: center;
+	}
+}
+.tgn-contact-title {
+	text-align: left;
+	font-size: 34px;
+	line-height: 1.25;
+}
+@media only screen and (min-width: 992px) {
+	.tgn-contact-info {
+		padding-top: 30px;
+	}
+}
+.tgn-contact-bullets {
+	list-style: none;
+	margin: 30px 0 32px;
+	padding: 0;
+}
+.tgn-contact-bullets li {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	margin-bottom: 26px;
+	font-size: 22px;
+	line-height: 1;
+	color: #252525;
+}
+.tgn-contact-bullets li:last-child {
+	margin-bottom: 0;
+}
+.tgn-contact-bullets svg {
+	display: block;
+	flex: 0 0 auto;
+	align-self: center;
+	width: 28px;
+	height: 28px;
+	color: #418D29;
+}
+.tgn-contact-form #contactWrapper {
+	width: 100%;
+}
+
+/* Animación de entrada: título, luego bullets en cascada, formulario desde la derecha */
+.tgn-contact-title {
+	opacity: 0;
+	transform: translateY(16px);
+	transition: opacity .6s ease, transform .6s ease;
+}
+.tgn-contact-bullets li {
+	opacity: 0;
+	transform: translateX(-24px);
+	transition: opacity .5s ease, transform .5s ease;
+}
+.tgn-contact-bullets li:nth-child(1) { transition-delay: .35s; }
+.tgn-contact-bullets li:nth-child(2) { transition-delay: .5s; }
+.tgn-contact-bullets li:nth-child(3) { transition-delay: .65s; }
+.tgn-contact-form {
+	opacity: 0;
+	transform: translateX(40px);
+	transition: opacity .7s ease, transform .7s ease;
+	transition-delay: .2s;
+}
+.tgn-contact-grid.is-visible .tgn-contact-title,
+.tgn-contact-grid.is-visible .tgn-contact-bullets li,
+.tgn-contact-grid.is-visible .tgn-contact-form {
+	opacity: 1;
+	transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+	.tgn-contact-title,
+	.tgn-contact-bullets li,
+	.tgn-contact-form {
+		transition: none !important;
+		opacity: 1 !important;
+		transform: none !important;
+	}
+}
