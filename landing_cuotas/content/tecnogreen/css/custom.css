@@ -187,14 +187,15 @@
 
 /* Hero: badge "CONTROL" + ícono wifi anclados al propio celular (antes estaban
    posicionados en píxeles absolutos contra el centro del slide entero, por eso
-   se desalineaban del celular en mobile). Ahora escalan junto con la imagen
-   usando container query units, sin depender del motor responsivo del slider. */
+   se desalineaban del celular en mobile). El círculo escala en % del ancho del
+   celular (funciona en cualquier tamaño); la tipografía del label usa px fijos
+   por breakpoint en vez de container query units, para no depender de que el
+   motor del slider le dé un tamaño de referencia resoluble al contenedor. */
 .tg-product-wrap {
 	position: relative;
 	display: inline-block;
 	width: 100%;
 	height: 100%;
-	container-type: inline-size;
 	isolation: isolate;
 }
 .tg-product-wrap img {
@@ -206,9 +207,9 @@
 }
 .tg-phone-badge {
 	position: absolute;
-	top: -3.5%;
-	left: 75.8%;
-	width: 40.6%;
+	top: 2%;
+	left: 58%;
+	width: 40%;
 	z-index: 2;
 	display: flex;
 	flex-direction: column;
@@ -219,10 +220,10 @@
 	color: #418D29;
 	font-family: Poppins, sans-serif;
 	font-weight: 700;
-	letter-spacing: 0.3cqw;
-	font-size: 4.9cqw;
+	letter-spacing: .5px;
+	font-size: 15px;
 	line-height: 1.15;
-	margin-bottom: 1.3cqw;
+	margin-bottom: 4px;
 	white-space: nowrap;
 }
 .tg-phone-badge-circle {
@@ -238,6 +239,13 @@
 .tg-phone-badge-circle svg {
 	width: 40%;
 	height: 40%;
+}
+@media only screen and (max-width: 767px) {
+	.tg-phone-badge-label {
+		font-size: 8px;
+		letter-spacing: .2px;
+		margin-bottom: 2px;
+	}
 }
 
 /* Hero slider: tamaños de texto para mobile (el !important es necesario porque el plugin
