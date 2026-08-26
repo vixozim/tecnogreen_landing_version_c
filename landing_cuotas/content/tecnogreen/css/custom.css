@@ -252,21 +252,22 @@
 	}
 }
 
-/* Hero mobile: celular agrandado y centrado sobre la pileta (Paso 3). El
-   contenedor del slide se agrandó (gridheight del JS de init + data-dim de
-   #tgn-cuotas-photo, ambos solo en el tier mobile) para que haya lugar debajo
-   del bloque negro sin invadirlo ni cortarse contra el borde inferior del
-   slider. El % de top/left es relativo al slide completo (778x1260 de
-   referencia en este breakpoint), no a la foto — está calculado para caer en
-   el centro del área visible de la pileta (debajo de donde termina el bloque
-   negro). Se pisa el posicionamiento inline que pone Revolution Slider por
-   JS, por eso el !important. */
+/* Hero mobile: celular agrandado y centrado sobre la pileta (Paso 3). Nota:
+   se probó agrandar también el alto del slide (gridheight del JS de init)
+   para tener más lugar, pero eso le genera una excepción de JS al motor de
+   Revolution Slider (rompe la inicialización del layer) — se descartó esa
+   vía. Este tamaño (28%) es el máximo que entra en el alto que la pileta YA
+   tiene hoy en mobile (450px de 900px de canvas) sin superponerse con el
+   bloque negro de arriba ni cortarse contra el borde inferior del slider. El
+   % de top/left es relativo al slide completo, no a la foto. Se pisa el
+   posicionamiento inline que pone Revolution Slider por JS, por eso el
+   !important. */
 @media only screen and (max-width: 767px) {
 	#tgn-cuotas-product {
-		top: 72% !important;
+		top: 81% !important;
 		left: 50% !important;
 		bottom: auto !important;
-		width: 42% !important;
+		width: 28% !important;
 		height: auto !important;
 		aspect-ratio: 308 / 577 !important;
 		transform: translate(-50%, -50%) !important;
