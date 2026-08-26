@@ -19529,22 +19529,27 @@ a.action_button:hover{text-decoration:none}
 /* Botón flotante de WhatsApp (igual al de www_tecnogreen_9856) */
 .whatsapp {
 	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 60px;
 	height: 60px;
 	bottom: 40px;
 	right: 40px;
 	background-color: #25d366;
 	color: #fff;
-	border-radius: 50px;
-	text-align: center;
-	font-size: 30px;
+	border-radius: 50%;
 	z-index: 100;
+	line-height: 0;
 }
 .whatsapp-icon {
-	margin-top: 13px;
+	display: block;
+	width: 30px;
+	height: 30px;
 }
 .whatsapp:hover {
 	color: #fff;
+	background-color: #1ebd5a;
 }
 
 
