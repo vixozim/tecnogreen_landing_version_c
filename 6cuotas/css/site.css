@@ -19738,6 +19738,16 @@ a.action_button:hover{text-decoration:none}
 	}
 }
 
+/* Imagen del equipo en el hero: Revolution Slider a veces estira el <img>
+   al cambiar de fuente (picture) antes de medir la imagen real; forzamos
+   la proporción correcta de producto_mobile.png (519x327). */
+@media only screen and (max-width: 767px) {
+	#slide-1-layer-1 img {
+		width: 160px !important;
+		height: 100.7px !important;
+	}
+}
+
 
 /* ---- content/tecnogreen/css/structure.css ---- */
 /*
