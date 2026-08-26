@@ -1,0 +1,180 @@
+/* Botón flotante de WhatsApp (igual al de www_tecnogreen_9856) */
+.whatsapp {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 40px;
+	right: 40px;
+	background-color: #25d366;
+	color: #fff;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
+	z-index: 100;
+}
+.whatsapp-icon {
+	margin-top: 13px;
+}
+.whatsapp:hover {
+	color: #fff;
+}
+
+
+
+
+/* FAQ accesible en grid de 3 columnas (prefijo propio tg-faq- para no pisar el tema) */
+.tg-faq {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0 50px;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: left;
+}
+@media only screen and (min-width: 992px) {
+	.tg-faq {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+.tg-faq-col {
+	display: flex;
+	flex-direction: column;
+}
+.tg-faq-group-title {
+	margin: 0 0 4px;
+	padding-top: 20px;
+	font-family: Lato, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .8px;
+	color: #252525;
+}
+.tg-faq-col > .tg-faq-group-title:first-child {
+	padding-top: 0;
+}
+.tg-faq-group-title-spaced {
+	margin-top: 6px;
+}
+.tg-faq-item {
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 5px;
+}
+.tg-faq-q {
+	margin: 0;
+	font-size: 100%;
+	font-weight: 400;
+}
+.tg-faq-btn {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	width: 100%;
+	background: none !important;
+	border-width: 1px !important;
+	border-style: solid !important;
+	border-color: transparent !important;
+	margin: 0;
+	cursor: pointer;
+	padding: 18px 2px;
+	font-family: Lato, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #252525 !important;
+	text-align: left;
+}
+.tg-faq-btn:hover {
+	background: none !important;
+	color: #418D29 !important;
+}
+.tg-faq-btn:focus-visible {
+	outline: 1px solid #418D29;
+	outline-offset: 2px;
+}
+.tg-faq-chevron {
+	flex: none;
+	width: 16px;
+	height: 16px;
+	color: #418D29;
+	transition: transform .25s ease;
+}
+.tg-faq-btn[aria-expanded="true"] .tg-faq-chevron {
+	transform: rotate(180deg);
+}
+.tg-faq-panel {
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height .3s ease;
+}
+.tg-faq-panel-inner {
+	padding: 0 2px 20px;
+}
+.tg-faq-panel-inner p {
+	margin: 0 0 10px;
+	color: #252525;
+	line-height: 1.6;
+}
+.tg-faq-panel-inner p:last-child {
+	margin-bottom: 0;
+}
+.tg-faq-aside {
+	font-size: 13px;
+	color: #747474;
+	border-left: 2px solid #eee;
+	padding-left: 12px;
+}
+
+/* Sección contacto: grid de 2 columnas (texto+bullets+whatsapp / formulario) */
+.tgn-contact-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: start;
+	gap: 40px;
+}
+@media only screen and (min-width: 992px) {
+	.tgn-contact-grid {
+		grid-template-columns: 45% 55%;
+		gap: 60px;
+		align-items: center;
+	}
+}
+.tgn-contact-title {
+	text-align: left;
+	font-size: 34px;
+	line-height: 1.25;
+}
+@media only screen and (min-width: 992px) {
+	.tgn-contact-info {
+		padding-top: 30px;
+	}
+}
+.tgn-contact-bullets {
+	list-style: none;
+	margin: 30px 0 32px;
+	padding: 0;
+}
+.tgn-contact-bullets li {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	margin-bottom: 26px;
+	font-size: 22px;
+	line-height: 1;
+	color: #252525;
+}
+.tgn-contact-bullets li:last-child {
+	margin-bottom: 0;
+}
+.tgn-contact-bullets svg {
+	display: block;
+	flex: 0 0 auto;
+	align-self: center;
+	width: 28px;
+	height: 28px;
+	color: #418D29;
+}
+.tgn-contact-form #contactWrapper {
+	width: 100%;
+}
+
