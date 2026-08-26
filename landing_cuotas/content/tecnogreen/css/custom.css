@@ -188,10 +188,14 @@
 /* Hero: badge "CONTROL" + ícono wifi anclados al propio celular (antes estaban
    posicionados en píxeles absolutos contra el centro del slide entero, por eso
    se desalineaban del celular en mobile). El círculo es un solo elemento que
-   escala en % del ancho del celular, pegado a su esquina superior derecha tal
-   como en el diseño original; ícono y label van centrados adentro. La
-   tipografía usa px fijos por breakpoint (no container query units) para no
-   depender de que el motor del slider le dé un tamaño resoluble al contenedor. */
+   escala en % del ancho del celular; ícono y label van centrados adentro.
+   Importante: el círculo tiene que quedar DENTRO del 0-100% del ancho del
+   celular (no colgando del borde como en el diseño original) porque
+   Revolution Slider le aplica overflow:hidden a la capa y recorta cualquier
+   contenido que se pase de su propio cuadro — probado: al 116% del ancho se
+   corta, al 98% no. La tipografía usa px fijos por breakpoint (no container
+   query units) para no depender de que el motor del slider le dé un tamaño
+   resoluble al contenedor. */
 .tg-product-wrap {
 	position: relative;
 	display: inline-block;
@@ -208,9 +212,9 @@
 }
 .tg-phone-badge {
 	position: absolute;
-	top: -3.5%;
-	left: 75.8%;
-	width: 40.6%;
+	top: 2%;
+	left: 58%;
+	width: 40%;
 	aspect-ratio: 1 / 1;
 	z-index: 2;
 	border-radius: 50%;
