@@ -19748,6 +19748,46 @@ a.action_button:hover{text-decoration:none}
 	}
 }
 
+/* Textos del hero en mobile: arrancaban a ~85px del top, deben arrancar a 40px */
+@media only screen and (max-width: 767px) {
+	.hero-cap-title,
+	.hero-cap-cuotas,
+	.hero-cap-price,
+	.hero-cap-iva,
+	.hero-cap-cta {
+		transform: translateY(-45px) !important;
+	}
+
+	.hero-cap-title {
+		font-size: 25px !important;
+	}
+	.hero-cap-cuotas {
+		font-size: 16px !important;
+		line-height: 20px !important;
+		margin-top: 10px !important;
+	}
+	.hero-cap-price {
+		font-size: 33px !important;
+		line-height: 60px !important;
+		margin-top: 25px !important;
+	}
+	.hero-cap-iva {
+		font-size: 14px !important;
+		line-height: 18px !important;
+		margin-top: 35px !important;
+	}
+	.hero-cap-cta {
+		font-size: 18px !important;
+		line-height: 22px !important;
+		margin: 77px 2px 0px 0px !important;
+	}
+	.hero-cap-cta .button,
+	.hero-cap-cta .button_label {
+		font-size: 18px !important;
+		line-height: 22px !important;
+	}
+}
+
 
 /* ---- content/tecnogreen/css/structure.css ---- */
 /*
