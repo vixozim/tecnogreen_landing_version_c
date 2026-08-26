@@ -252,6 +252,27 @@
 	}
 }
 
+/* Hero mobile: celular agrandado y centrado sobre la pileta (Paso 3). El
+   contenedor del slide se agrandó (gridheight del JS de init + data-dim de
+   #tgn-cuotas-photo, ambos solo en el tier mobile) para que haya lugar debajo
+   del bloque negro sin invadirlo ni cortarse contra el borde inferior del
+   slider. El % de top/left es relativo al slide completo (778x1260 de
+   referencia en este breakpoint), no a la foto — está calculado para caer en
+   el centro del área visible de la pileta (debajo de donde termina el bloque
+   negro). Se pisa el posicionamiento inline que pone Revolution Slider por
+   JS, por eso el !important. */
+@media only screen and (max-width: 767px) {
+	#tgn-cuotas-product {
+		top: 72% !important;
+		left: 50% !important;
+		bottom: auto !important;
+		width: 42% !important;
+		height: auto !important;
+		aspect-ratio: 308 / 577 !important;
+		transform: translate(-50%, -50%) !important;
+	}
+}
+
 /* Hero slider: tamaños de texto para mobile (el !important es necesario porque el plugin
    Revolution Slider re-escala el tamaño inline vía JS en cada resize) */
 @media only screen and (max-width: 767px) {
