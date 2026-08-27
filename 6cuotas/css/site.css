@@ -19582,6 +19582,15 @@ a.action_button:hover{text-decoration:none}
 	text-transform: uppercase;
 	letter-spacing: .8px;
 	color: #252525;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.tg-faq-group-icon {
+	flex: none;
+	width: 24px;
+	height: 24px;
+	color: #418D29;
 }
 .tg-faq-col > .tg-faq-group-title:first-child {
 	padding-top: 0;
@@ -19769,17 +19778,17 @@ a.action_button:hover{text-decoration:none}
 	.hero-cap-price {
 		font-size: 33px !important;
 		line-height: 60px !important;
-		margin-top: 25px !important;
+		margin-top: 55px !important;
 	}
 	.hero-cap-iva {
 		font-size: 14px !important;
 		line-height: 18px !important;
-		margin-top: 35px !important;
+		margin-top: 85px !important;
 	}
 	.hero-cap-cta {
 		font-size: 18px !important;
 		line-height: 22px !important;
-		margin: 77px 2px 0px 0px !important;
+		margin: 150px 2px 0px 0px !important;
 	}
 	.hero-cap-cta .button,
 	.hero-cap-cta .button_label {
@@ -29431,7 +29440,7 @@ h3.title {
 	border: 0
 }
 #Top_bar {
-	background: rgba(255,255,255,.6);
+	background: #ffffff;
 	border-bottom: 1px solid rgba(255,255,255,.4);
 	top: 0
 }#Top_bar:not(.is-sticky)
