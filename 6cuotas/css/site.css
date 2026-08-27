@@ -19825,6 +19825,15 @@ a.action_button:hover{text-decoration:none}
 	}
 }
 
+/* Titulo del hero en desktop: a 62px la primera linea ("...ahora,") se salia
+   del area del texto y se metia debajo del nadador. Se reduce el tamaño
+   manteniendo el mismo line-height para no mover el resto de los bloques. */
+@media only screen and (min-width: 768px) {
+	.hero-cap-title {
+		font-size: 46px !important;
+	}
+}
+
 
 /* ---- content/tecnogreen/css/structure.css ---- */
 /*
