@@ -19788,6 +19788,7 @@ a.action_button:hover{text-decoration:none}
 /* Textos del hero en mobile: arrancaban a ~85px del top, deben arrancar a 40px */
 @media only screen and (max-width: 767px) {
 	.hero-cap-title,
+	.hero-cap-producto,
 	.hero-cap-cuotas,
 	.hero-cap-price,
 	.hero-cap-iva,
@@ -19797,11 +19798,17 @@ a.action_button:hover{text-decoration:none}
 
 	.hero-cap-title {
 		font-size: 25px !important;
+		transform: translateY(-58px) !important;
+	}
+	.hero-cap-producto {
+		font-size: 16px !important;
+		line-height: 20px !important;
+		margin-top: 13px !important;
 	}
 	.hero-cap-cuotas {
 		font-size: 16px !important;
 		line-height: 20px !important;
-		margin-top: 10px !important;
+		margin-top: 27px !important;
 	}
 	.hero-cap-price {
 		font-size: 33px !important;
